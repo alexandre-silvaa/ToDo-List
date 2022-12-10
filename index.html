@@ -19,13 +19,13 @@
         <form id="todo-form">
             <p>Digite uma tarefa nova:</p>
             <div class="form-control">
-                <input type="text" name="todo-input" id="todo-input" placeholder="Qual sua nova tarefa?"/>
+                <input type="text" name="todo-input" id="todo-input" placeholder="O que está pensando?"/>
                 <button type="submit">
                     <i class="fa-thin fa-plus"></i>
                 </button>
             </div>
         </form>
-        <form id="edit-form">
+        <form id="edit-form" class="hide">
             <p>Edite sua tarefa:</p>
             <div class="form-control">
                 <input type="text" name="edit-input" id="edit-input"/>
@@ -35,7 +35,7 @@
             </div>
             <button id="cancel-edit-btn">Cancelar</button>
         </form>
-        <div class="toolbar">
+        <div id="toolbar">
             <div id="search">
                 <h4>Pesquisar:</h4>
                 <form>
@@ -53,31 +53,31 @@
                     <option value="todo">A fazer</option>
                 </select>
             </div>
-            <div id="todo-list">
-                <div class="todo">
-                    <h3>Estudar</h3>
-                    <button class="finish-todo">
-                        <i class="fa-solid fa-check"></i>
-                    </button>
-                    <button class="edit-todo">
-                        <i class="fa-solid fa-pen"></i>
-                    </button>
-                    <button class="remove-todo">
-                        <i class="fa-solid fa-xmark"></i>
-                    </button>
-                </div>
-                <div class="todo">
-                    <h3>Estudar PHP</h3>
-                    <button class="finish-todo">
-                        <i class="fa-solid fa-check"></i>
-                    </button>
-                    <button class="edit-todo">
-                        <i class="fa-solid fa-pen"></i>
-                    </button>
-                    <button class="remove-todo">
-                        <i class="fa-solid fa-xmark"></i>
-                    </button>
-                </div>
+        </div>
+        <div id="todo-list">
+            <div class="todo done">
+                <h3>Estudar</h3>
+                <button class="finish-todo">
+                    <i class="fa-solid fa-check"></i>
+                </button>
+                <button class="edit-todo">
+                    <i class="fa-solid fa-pen"></i>
+                </button>
+                <button class="remove-todo">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+            <div class="todo">
+                <h3>Estudar PHP</h3>
+                <button class="finish-todo">
+                    <i class="fa-solid fa-check"></i>
+                </button>
+                <button class="edit-todo">
+                    <i class="fa-solid fa-pen"></i>
+                </button>
+                <button class="remove-todo">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
             </div>
         </div>
     </div>
